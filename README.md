@@ -7,37 +7,49 @@ Installation
 To run this project, you will need to have the following software installed on your system:
 
 PHP 7.4 or later
+
 MySQL 5.7 or later
+
 Node.js 14.x or later
+
 npm 6.x or later
+
 Once you have these prerequisites installed, follow these steps:
 
 bash
 
 cd <repository>
+
 Install the Laravel dependencies:
 
 composer install
+
 Create a new .env file:
 
 bash
 
 cp .env.example .env
+
 Generate a new application key:
 
-vbnet
 
 php artisan key:generate
+
 Update the database configuration in the .env file with your MySQL database details:
 
-makefile
-Copy code
+
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=<your_database_name>
+
 DB_USERNAME=<your_database_username>
+
 DB_PASSWORD=<your_database_password>
+
 Run the database migrations:
 
 
@@ -47,13 +59,14 @@ Install the Next.js dependencies:
 bash
 
 cd my-app
+
 npm install
+
 Start the Laravel server:
 
-
 php artisan serve
-Start the Next.js development server:
 
+Start the Next.js development server:
 
 npm run dev
 
